@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: #2B2B52;
+        }
+
+        #noitem{
+            width: fit-content;
+            margin: auto;
+            display: relative;
+            margin-top: 70px;
+            margin-bottom: 70px;
+            color: gray;
+        }
+
+        #footer{
+            width: 100%;
+            background-color: cadetblue;
+            color: aliceblue;
+            padding: 2px;
+            text-align: center;
+            margin-top: 198px;
+        }
+
+
+        @media (max-width: 768px) {
+            #addbtn{
+                position: relative;
+                margin-top: 10px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header id="main-header" class="bg-primary text-white p-4 mb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="header-title">TO-DO List</h1>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <input id="filter" type="text" class="form-control" placeholder="Search Items...">
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <div class="container">
+        <div id="main" class="card card-body">
+            
+            <h2 class="title">Add Item</h2>
+            <form id="addForm" class="form-inline mb-3">
+                <input type="text" class="form-control mr-2" id="item">
+                <input id="addbtn" type="submit" class="btn btn-success" value="Add">
+            </form>
+            <!-- <h2 id="hideit">this need yo be hidden <span  style="display: none;">this is span</span></h2> -->
+            <h2 class="title">To-Do :</h2>
+            <h3 id="noitem">Nothing to do :(</h3>
+            <ul id="items" class="list-group">
+                <li id="first-list" class="list-group-item">Item 1 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+                <!-- <li class="list-group-item">Item 2 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+                <li class="list-group-item">Item 3 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+                <li class="list-group-item">Item 4 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+       -->  </ul>
+
+
+        </div>
+
+    </div>
+    <div id="footer">
+        <h4 id="footerText">Copyright &copy; 2020, Nishant Tyagi</h4>
+    </div>
+
+<script src="./list.js"></script>
+</body>
+</html>
