@@ -48,6 +48,7 @@ function addItem(e){
 
 
     items.appendChild(newList); 
+    myform.reset()
 }
 
 function filterItems(e){
